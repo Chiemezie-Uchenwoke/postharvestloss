@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./styles/sidebar.css">
+    <link rel="stylesheet" href="./styles/main-nav.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/technology.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!-- small screen navigation -->
+    <header class="sidebar">
+        <nav>
+
+            <div class="side-nav">
+                <div class="sideflex first">
+                    <div>
+                        <img src="./images/logo.png" alt="logo" height="70">
+                        <span>Post Harvest Loss</span>
+                    </div>
+                </div>
+
+                <div class="sideflex second">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+
+            <div class="side-nav-cont">
+
+                <div class="side-menus f001">
+                    <a href="./index.html">Home</a>
+                    <a href="./updates.html">Updates</a>
+                </div>
+
+            </div>
+    
+            <div class="side-dropdown">
+                <a onclick="toggleDropDown()" class="side-dropbtn">Resource <i class="fa-solid fa-angle-down"></i></a>
+
+                <div class="side-dropdown-cont">
+                    <a href="./technology.html">Technology</a>
+                    <a href="./directory.html">Directory</a>
+                    <a href="./crop.html">Crop</a>
+                </div>
+            </div>
+                
+    
+            <div class="side-menus f002">
+                <a href="./about.html">About</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+
+            <div class="get-started">
+                <a href="./#">Get Started</a>
+            </div>
+    
+        </nav>
+    </header>
+    
+    <!-- Main Navigation for large screens -->
+        <header class="main-nav">
+            <nav>
+    
+                <div class="mainflex one">
+                    <div>
+                        <img src="./images/logo.png" alt="logo" height="70">
+                        <span>Post Harvest Loss</span>
+                    </div>
+                </div>
+    
+                <div class="mainflex two">
+                    <a href="./index.html">Home</a>
+                    <a href="./updates.html">updates</a>
+    
+                    <div class="dropdown">
+                        <button class="active">Resource <i class="fa-solid fa-angle-down"></i></button>
+    
+                        <div class="dropdown-cont">
+                            <a href="./technology.html" class="active">Technology</a>
+                            <a href="./directory.html">Directory</a>
+                            <a href="./crop.html">Crop</a>
+                        </div>
+                    </div>
+    
+                    <a href="./about.html">about</a>
+                    <a href="./contact.html">contact</a>
+                </div>
+    
+                <div class="mainflex three">
+                    <a href="./#">Login</a>
+
+                    <div class="get-btn">
+                        <a href="./#">Get Started</a>
+                    </div>
+                </div>
+    
+                <div class="mainflex four">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+            </div>
+
+
+        </nav>
+    </header>
+
+
+    <!-- hero section -->
+     <section class="hero-tech">
+
+        <div class="grid-tech-cont">
+
+            <div class="grid-th-ct one-tch">Video/Picture Here</div>
+
+            <div class="grid-th-ct two-tch">
+                <h2>Technology</h2>
+
+                <p>
+                    Content is loading... <a href="./#">Read more <i class="fa-solid fa-angles-right"></i></a>
+                </p>
+            </div>
+
+            <div class="grid-th-ct three-tch">Video/Picture Here</div>
+
+            <div class="grid-th-ct four-tch">
+                <h2>Crop</h2>
+
+                <p>
+                    Content is loading... <a href="./#">Read more <i class="fa-solid fa-angles-right"></i></a>
+                </p>
+            </div>
+
+            <div class="grid-th-ct five-tch">Video/Picture Here</div>
+
+            <div class="grid-th-ct six-tch">
+                <h2>Hematic Drier</h2>
+
+                <p>
+                    Content is loading... <a href="./#">Read more <i class="fa-solid fa-angles-right"></i></a>
+                </p>
+            </div>
+
+            <div class="grid-th-ct seven-tch">Video/Picture Here</div>
+            
+            <div class="grid-th-ct eight-tch">
+                <h2>NISPRI Dust</h2>
+
+                <p>
+                    Content is loading... <a href="./#">Read more <i class="fa-solid fa-angles-right"></i></a>
+                </p>
+            </div>
+
+        </div>
+
+        <div>load more <i class="fa-solid fa-angles-down"></i></div>
+
+
+
+        <!-- This is the social media icon in the hero -->
+         <div class="social-media">
+
+            <div><i class="fa-brands fa-facebook"></i></div>
+
+            <div><i class="fa-brands fa-instagram"></i></div>
+
+            <div><i class="fa-brands fa-x-twitter"></i></div>
+
+         </div>
+     </section>
+     
+
+
+
+
+
+
+
+
+
+    <script>
+        const sidebar = document.querySelector(".sidebar");
+
+        const open = document.querySelector(".four");
+
+        const close = document.querySelector(".second");
+
+        open.onclick = () =>{
+            sidebar.style.display = 'block';
+        }
+
+        close.onclick = () =>{
+            sidebar.style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html>
